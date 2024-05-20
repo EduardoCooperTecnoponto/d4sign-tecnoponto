@@ -1,8 +1,8 @@
 <?php
 
-namespace Edmarr2\D4sign\Tests;
+namespace Tecnoponto\D4sign\Tests;
 
-use Edmarr2\D4sign\Providers\D4SignServiceProvider;
+use Tecnoponto\D4sign\Providers\D4SignServiceProvider;
 use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase as Orchestra;
 

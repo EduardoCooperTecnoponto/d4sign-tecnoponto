@@ -1,6 +1,6 @@
 <?php
 
-namespace Edmarr2\D4sign\Services;
+namespace Tecnoponto\D4sign\Services;
 
 class Users extends Client
 {

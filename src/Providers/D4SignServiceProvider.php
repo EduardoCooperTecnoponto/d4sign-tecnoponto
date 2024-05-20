@@ -1,8 +1,8 @@
 <?php
 
-namespace Edmarr2\D4sign\Providers;
+namespace Tecnoponto\D4sign\Providers;
 
-use Edmarr2\D4sign\Services\D4sign;
+use Tecnoponto\D4sign\Services\D4sign;
 use Illuminate\Support\ServiceProvider;
 
 class D4SignServiceProvider extends ServiceProvider

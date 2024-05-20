@@ -1,6 +1,6 @@
 <?php
 
-namespace Edmarr2\D4sign\Facades;
+namespace Tecnoponto\D4sign\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

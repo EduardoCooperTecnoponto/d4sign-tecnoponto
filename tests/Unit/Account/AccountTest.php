@@ -1,9 +1,9 @@
 <?php
 
-namespace Edmarr2\D4sign\Tests\Unit\Account;
+namespace Tecnoponto\D4sign\Tests\Unit\Account;
 
-use Edmarr2\D4sign\Facades\D4Sign;
-use Edmarr2\D4sign\Tests\TestCase;
+use Tecnoponto\D4sign\Facades\D4Sign;
+use Tecnoponto\D4sign\Tests\TestCase;
 
 class AccountTest extends TestCase
 {

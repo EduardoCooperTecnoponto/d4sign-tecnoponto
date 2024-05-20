@@ -1,20 +1,11 @@
-# D4Sign Laravel Client - SDK
+# Tecnoponto D4Sign 
 
-SDK Não oficial de integração á API do serviço [D4Sign REST API](http://docapi.d4sign.com.br/).
+Pacote de integração com a API do serviço [D4Sign REST API](http://docapi.d4sign.com.br/). 
+Pacote forkado do projeto [d4sign-laravel](https://github.com/edmarr2/d4sign-laravel)
 
 # Instalação
-Abra o arquivo `composer.json` e insira a seguinte instrução
-```
-"require": {
-    "edmarr2/d4sign-laravel": "dev-main"
-}
-``` 
-
-
-Via composer, execute o seguinte comando: 
-
 ```shell script
-composer require edmarr2/d4sign-laravel
+composer require Tecnoponto/d4sign
 ```
 
 # Criação do configurador

@@ -1,16 +1,20 @@
 {
-    "name": "edmarr2/d4sign-laravel",
-    "description": "A D4Sign é uma plataforma de assinatura eletrônica de documentos que atende os requisitos da Medida Provisória 2.200-2/01, ou seja, autenticidade, integridade e não repúdio. Trazendo, assim, validade jurídica para todas as assinaturas realizadas através da D4Sign.",
+    "name": "tecnoponto/d4sign",
+    "description": "Pacote de integração com a D4sign para a Tecnoponto",
     "license": "MIT",
     "authors": [
         {
-            "name": "edmarr2",
+            "name": "Tecnoponto",
             "email": "edmar_espinola@hotmail.com"
-        }
+        },
+        {
+            "name": "Eduardo M. Cooper",
+            "email": "oeduardocooper@gmail.com"
+        }        
     ],
     "require": {
-        "guzzlehttp/guzzle": "^6.0|^7.0",
-        "illuminate/support": "^6.0|^7.0|^8.0",
+        "guzzlehttp/guzzle": "*",
+        "illuminate/support": "*",
         "ext-json": "*"
     },
     "require-dev": {
@@ -19,18 +23,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Edmarr2\\D4sign\\": "src/"
+            "Tecnoponto\\D4sign\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Edmarr2\\D4sign\\Tests\\": "tests/"
+            "Tecnoponto\\D4sign\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Edmarr2\\D4sign\\Providers\\D4SignServiceProvider"
+                "Tecnoponto\\D4sign\\Providers\\D4SignServiceProvider"
             ]
         }
     }
