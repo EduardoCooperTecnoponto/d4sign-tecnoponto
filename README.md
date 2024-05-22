@@ -5,7 +5,7 @@ Pacote forkado do projeto [d4sign-laravel](https://github.com/edmarr2/d4sign-lar
 
 # Instalação
 ```shell script
-composer require Tecnoponto/d4sign
+composer require tecnoponto/d4sign
 ```
 
 # Criação do configurador

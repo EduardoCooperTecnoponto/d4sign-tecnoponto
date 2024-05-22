@@ -123,7 +123,7 @@ class Documents extends Client
      *
      * @return mixed
      */
-    public function makeDocumentByTemplate($documentKey, $documentName, $templates, $uuidFolder = '')
+    public function makeDocumentByTemplateOriginal($documentKey, $documentName, $templates, $uuidFolder = '')
     {
         return $this->post('documents/' . $documentKey . '/makedocumentbytemplate', [
             'templates' =>  $templates,
@@ -131,6 +131,21 @@ class Documents extends Client
             'uuid_folder'=> $uuidFolder
         ]);
     }
+
+    /**
+     * @param $documentKey
+     * @param $body
+     * @param 
+     *
+     * @return mixed
+     */
+    public function makeDocumentByTemplate($documentKey, $body)
+    {
+
+        $url = 'https://secure.d4sign.com.br/api/v1/documents/' . $documentKey . '/makedocumentbytemplate?tokenAPI=' . config('d4sign.token_api') . '&cryptKey=' . config('d4sign.crypt_key');
+
+        return $this->post($url, $body);   
+    }    
 
     /**
      * @param $documentKey
