@@ -108,11 +108,19 @@ class Documents extends Client
         ]);
     }
 
-    public function createList($documentKey, $signers)
+    public function createListOriginal($documentKey, $signers)
     {
         return $this->post('documents/' . $documentKey . '/createlist', [
             'signers' => ($signers)
         ]);
+    }
+
+    public function createList($documentKey, $signers)
+    {
+        $url = 'https://secure.d4sign.com.br/api/v1/documents/' . $documentKey . '/createlist?tokenAPI=' . config('d4sign.token_api') . '&cryptKey=' . config('d4sign.crypt_key');
+
+        return $this->post($url, $signers);   
+
     }
 
     /**
