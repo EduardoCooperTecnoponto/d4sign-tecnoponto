@@ -117,7 +117,7 @@ class Documents extends Client
 
     public function createList($documentKey, $signers)
     {
-        $url = 'https://secure.d4sign.com.br/api/v1/documents/' . $documentKey . '/createlist?tokenAPI=' . config('d4sign.token_api') . '&cryptKey=' . config('d4sign.crypt_key');
+        $url = $this->getBaseUri() . 'documents/' . $documentKey . '/createlist?tokenAPI=' . config('d4sign.token_api') . '&cryptKey=' . config('d4sign.crypt_key');
 
         return $this->post($url, $signers);   
 
@@ -150,7 +150,7 @@ class Documents extends Client
     public function makeDocumentByTemplate($documentKey, $body)
     {
 
-        $url = 'https://secure.d4sign.com.br/api/v1/documents/' . $documentKey . '/makedocumentbytemplate?tokenAPI=' . config('d4sign.token_api') . '&cryptKey=' . config('d4sign.crypt_key');
+        $url = $this->getBaseUri() . 'documents/' . $documentKey . '/makedocumentbytemplate?tokenAPI=' . config('d4sign.token_api') . '&cryptKey=' . config('d4sign.crypt_key');
 
         return $this->post($url, $body);   
     }    
